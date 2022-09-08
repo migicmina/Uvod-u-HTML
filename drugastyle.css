@@ -1,0 +1,33 @@
+body{
+    background-color: lightpink;
+    
+}
+h1{
+    text-shadow:2px 2px 5px rgb(128, 11, 182) ;
+}
+p{
+    border: 2px solid black;
+}
+td:nth-child(even), th:nth-child(even) {
+    background-color: lightcoral;
+  }
+  table{
+    border-color: #b40b8c;
+  }
+
+tr{
+    text-align: center;
+}
+#prvi_red{
+    color: #ffffff;
+}
+.warning{
+    font-style: italic;
+}
+table{
+    width: 30%;
+    height: 30%;
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
