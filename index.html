@@ -6,36 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSNOVE HTML-A</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-
-
-
-
-
-    </style>
     
 </head>
-<body id="pocetak">
-   <center><h1>Osnove html-a</h1><a href="https://www.pinterest.com/migicmina/">Mina Migić</a></center> 
-  
-   <center> <ul id="lista">
-       <h3> <li><a href="https://frn.edu.ba/uvod-u-www-2/">Uvod u WWW</a></li></h3>
-      <h3>  <li><a href="https://www.oxfordwebstudio.com/da-li-znate/sta-je-html.html">Sta je HTML</a></li></h3>
-      <h3>  <li><a href="https://www.oxfordwebstudio.com/da-li-znate/sta-je-url.html">Sta je URL</a></li></h3>
-    </ul>
-</center>
-   
-    <p>
-       <h2>Istorija HTML:</h2>
-       <br>
-       HTML je nastao uprošćavanjem SGML (Standard Generalized Markup Language, standardizovani uopšteni jezik za označavanje) standarda sa svrhom opisa dokumenta koji se objavljuju na vebu.<br>
-       U početku je bio prilično ograničen što se označavanja sadržaja tiče i pružao je uglavnom elementarne stvari za označavanje i formatiranje teksta (paragrafi, naslovi, citati itd.).<br> Kako je veb rastao tako je rasla i potreba za bogatijim sadržajem te je u tom smeru razvijan i HTML standard. Tada su standardu dodate elementi za opis tabela, slika, slojeva, napredno formatiranje teksta itd.
-    </p>
- <center>   <img src="hslika.png" height="250px"></center>
+<body>
+    <div class="topnav">
+        <a class="active" href="pocetna.html">Početna strana</a>
+        <a href="ishrana.html">Ishrana</a>
+        <a href="teretanens.html">Teretane u Novom Sadu</a>
+      
+       <label for="neketeretane" >Neke teretane:</label>
+       <select name="gyms" id="gyms">
+        <option value="megagym">Mega gym</option>
+        <option value="nolimit">No limit gym</option>
+        <option value="xgym">X gym</option>
+        <option value="classicgym">Classic gym</option>
+      </select>
+      </div>
 
-   <a href="#lista">Vracanjena listu</a>
-   <h3> <li><a href="druga.html">Druga strana</a></li></h3>
-   
-   <br> <a href="#pocetak">Vracanje na vrh stranice</a></br>
+   <div  id="container">   
+    <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit">Submit</button>
+      </form>
+
+      <label for="cars">Filteri:</label>
+<select name="mzgym" id="mzgym">
+  <option value="zteretana">Zenska teretana</option>
+  <option value="mteretana">Muska teretana</option>
+
+  
+</div>
+
+      
+      
+  
+</select>
 </body>
 </html>
