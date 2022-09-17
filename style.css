@@ -1,22 +1,71 @@
-body{
-    background-color: lightblue;
+html {
+  height:100%;
 }
-h1{
-    background-color: white;
+
+body {
+  margin:0;
 }
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
 p{
     border: 2px solid black;
 }
-div{
-    background-color: blue;
-    
-}
+
 a{
     color: white;
 }
 .topnav {
-    overflow: hidden;
-    background-color: #e9e9e9;
+  width: 100%;
+  height: 50px;
+  
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.5);
   }
   
   .topnav a {
@@ -30,13 +79,13 @@ a{
   }
   
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #FFE7FF;
+    color: #923D9E;
   }
   
   .topnav a.active {
-    background-color: #2196F3;
-    color: white;
+   
+    color: black;
   }
   
   .topnav .search-container {
@@ -55,14 +104,14 @@ a{
     padding: 6px 10px;
     margin-top: 8px;
     margin-right: 16px;
-    background: #ddd;
+    background:#FFC658;
     font-size: 17px;
     border: none;
     cursor: pointer;
   }
   
   .topnav .search-container button:hover {
-    background: #ccc;
+    background: #FFB4FF;
   }
   
   @media screen and (max-width: 600px) {
@@ -85,7 +134,7 @@ a{
     position: relative;left: 50px; top: 6px;
   }
   #wrapper {
-    border: 1px solid blue;
+    border: 1px solid #FFC658;
 }
 #div1 {
   
@@ -96,22 +145,17 @@ a{
   
      
 }
-p { border: 2px solid black; width: 250px;padding-bottom: 5%; }
+p { border: 2px solid black; width: 250px; }
 img { border: 2px solid black; width: 200px; height: 200px;display: block;
   margin-left: auto;
   margin-right: auto;
-margin-top: 10px;}
+margin-top: 10px;
+margin-bottom: 30px;}
 #prva {
-  
   display: inline-block;
-  
- 
 }
 #druga {
- 
   display: inline-block;
-  
- 
 }
 #treca{
   display: inline-block;
@@ -127,4 +171,28 @@ margin-top: 10px;}
   padding-top: 0px;
   margin-left: auto;
   margin-top: 0px;
+}
+.images{
+  
+  margin: auto;
+  width: 55%;
+  padding: 10px;
+}
+#btnMina{
+  float: right;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+#img1{
+  float: right;
+  margin-right: 25px;
+  width: 350px;
+  height: 350px;
+}
+.ishrana{
+  height: 450px;
+}
+.nabrajanje{
+  float: right;
+  margin-right: 50%;
 }
